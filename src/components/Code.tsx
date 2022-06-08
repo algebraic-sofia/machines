@@ -6,7 +6,7 @@ import '../css/code.css'
 
 import { Menu } from './Menu'
 
-export const Code = ({ setCode }) => {
+export const Code = ({ setCode }: { setCode: (_: string) => void }) => {
   return (
     <div>
       <Menu>

@@ -2,7 +2,19 @@ import * as React from 'react'
 
 import { Menu } from './Menu'
 
-export const Item = ({ isSet, text, onClick }) => (
+type ItemProps = {
+  isSet: boolean
+  text: string
+  onClick: () => void
+}
+
+type ItemMenu = {
+  items: { key: number; text: string; view: JSX.Element }[]
+  selected: number
+  setSelected: (_: number) => void
+}
+
+export const Item = ({ isSet, text, onClick }: ItemProps) => (
   <div
     onClick={onClick}
     className={`flex items-center h-full px-5 border-b ${
@@ -13,7 +25,7 @@ export const Item = ({ isSet, text, onClick }) => (
   </div>
 )
 
-export const ItemMenu = ({ items = [], selected, setSelected }) => (
+export const ItemMenu = ({ items = [], selected, setSelected }: ItemMenu) => (
   <Menu>
     {items.map((item) => (
       <Item

@@ -3,7 +3,6 @@ import { useRef, useState } from 'react'
 
 import { ItemMenu } from './ItemMenu'
 
-import { Closure } from './tables/Closure'
 import { First } from './tables/First'
 import { GotoAction } from './tables/GotoAction'
 
@@ -36,7 +35,6 @@ export const View = ({ code = '' }: { code: string }) => {
   }
 
   const items = [
-    { key: 0, text: 'Closure Table', view: <Closure data={[]} /> },
     { key: 1, text: 'First Table', view: <First data={firstData} /> },
   ]
 

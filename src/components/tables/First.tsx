@@ -1,6 +1,6 @@
 import Table from 'rc-table'
 
-const Symbol = (s) => (
+const Symbol = (s: Set<string>) => (
   <div className="flex">
     {Array.from(s.keys()).map((s) => (
       <div key={s} className="m-1 px-2 rounded-sm bg-teal-900 bg-opacity-10">
@@ -26,4 +26,10 @@ const columns = [
   },
 ]
 
-export const First = ({ data }) => <Table columns={columns} data={data} />
+type FirstProps = {
+  data: { symbol: string; symbols: Set<string> }[]
+}
+
+export const First = ({ data }: FirstProps) => (
+  <Table columns={columns} data={data} />
+)
