@@ -1,0 +1,152 @@
+.ace-grammar .ace_gutter {
+  background: transparent;
+  color: rgb(144, 145, 148);
+}
+
+.ace-grammar .ace_print-margin {
+  width: 1px;
+  background: transparent;
+}
+
+.ace-grammar {
+  background-color: tranparent;
+  color: #f8f8f2;
+}
+
+.ace-grammar .ace_cursor {
+  color: #f8f8f0;
+}
+
+.ace-grammar .ace_marker-layer .ace_selection {
+  background: #44475a4b;
+}
+
+.ace-grammar .ace_marker-layer .ace_step {
+  background: rgb(198, 219, 174);
+}
+
+.ace-grammar .ace_marker-layer .ace_bracket {
+  background: #5d5d5d67;
+}
+
+.ace-grammar .ace_marker-layer .ace_active-line {
+  background: #44475a4b;
+}
+
+.ace-grammar .ace_gutter-active-line {
+  background-color: #44475a4b;
+
+  border-left: 1px solid #ff6363;
+}
+
+.ace_scroll-left {
+  box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0.4) inset !important;
+}
+
+.ace-grammar .ace_marker-layer .ace_selected-word {
+  background: #5d5d5d67;
+}
+
+.ace-grammar .ace_fold {
+  background-color: #fa5050;
+  border-color: #f8f8f2;
+}
+
+.ace-grammar .ace_keyword {
+  color: #ff79c6;
+}
+
+.ace-grammar .ace_constant.ace_language {
+  color: #bd93f9;
+}
+
+.ace-grammar .ace_constant.ace_numeric {
+  color: #bd93f9;
+}
+
+.ace-grammar .ace_constant.ace_character {
+  color: #bd93f9;
+}
+
+.ace-grammar .ace_constant.ace_character.ace_escape {
+  color: #ff79c6;
+}
+
+.ace-grammar .ace_constant.ace_other {
+  color: #bd93f9;
+}
+
+.ace-grammar .ace_support.ace_function {
+  color: #8be9fd;
+}
+
+.ace-grammar .ace_support.ace_constant {
+  color: #6be5fd;
+}
+
+.ace-grammar .ace_support.ace_class {
+  font-style: italic;
+  color: #66d9ef;
+}
+
+.ace-grammar .ace_support.ace_type {
+  font-style: italic;
+  color: #66d9ef;
+}
+
+.ace-grammar .ace_storage {
+  color: #ff79c6;
+}
+
+.ace-grammar .ace_storage.ace_type {
+  font-style: italic;
+  color: #8be9fd;
+}
+
+.ace-grammar .ace_invalid {
+  color: #f8f8f0;
+  background-color: #ff79c6;
+}
+
+.ace-grammar .ace_invalid.ace_deprecated {
+  color: #f8f8f0;
+  background-color: #bd93f9;
+}
+
+.ace-grammar .ace_string {
+  color: #f1fa8c;
+}
+
+.ace-grammar .ace_comment {
+  color: #484848;
+}
+
+.ace-grammar .ace_variable {
+  color: #f277a4;
+}
+
+.ace-grammar .ace_variable.ace_parameter {
+  font-style: italic;
+  color: #ffb86c;
+}
+
+.ace-grammar .ace_entity.ace_other.ace_attribute-name {
+  color: #50fa7b;
+}
+
+.ace-grammar .ace_entity.ace_name.ace_function {
+  color: #50fa7b;
+}
+
+.ace-grammar .ace_entity.ace_name.ace_tag {
+  color: #ff79c6;
+}
+
+.ace-grammar .ace_invisible {
+  color: #626680;
+}
+
+.ace-grammar .ace_indent-guide {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGBgYHB3d/8PAAOIAdULw8qMAAAAAElFTkSuQmCC)
+    right repeat-y;
+}
