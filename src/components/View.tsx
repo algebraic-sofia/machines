@@ -38,34 +38,32 @@ export const View = ({ code = '' }: { code: string }) => {
     { key: 1, text: 'First Table', view: <First data={firstData} /> },
   ]
 
-  if (grammar && grammarC) {
-    let data = [...grammarC.entries()].map(([k, v]) => {
-      let res: Record<string, any> = Object.fromEntries(v)
-      res['state'] = k
-      return res
-    })
+  let data = [...(grammarC?.entries() || new Map())].map(([k, v]) => {
+    let res: Record<string, any> = Object.fromEntries(v)
+    res['state'] = k
+    return res
+  })
 
-    items.push({
-      key: 2,
-      text: 'Table',
-      view: (
-        <GotoAction
-          nonTerminals={[...grammar.nonTerminals]}
-          terminals={[...grammar.terminals]}
-          data={data}
-        />
-      ),
-    })
-  }
+  items.push({
+    key: 1,
+    text: 'Table',
+    view: (
+      <GotoAction
+        nonTerminals={[...(grammar?.nonTerminals || new Set())]}
+        terminals={[...(grammar?.terminals || new Set())]}
+        data={data}
+      />
+    ),
+  })
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-scroll">
       <ItemMenu
         items={items}
         selected={selected}
         setSelected={setSelected}
       ></ItemMenu>
-      <div className="p-5">{items[selected].view}</div>
+      <div className="p-5 overflow-scroll">{items[selected].view}</div>
     </div>
   )
 }
